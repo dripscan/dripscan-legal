@@ -63,10 +63,20 @@
         <h2>How Photos Are Processed</h2>
         <p>When you scan an outfit, the photo is sent to our secure server for AI analysis. The photo is processed in real-time and is <strong>not saved, stored, or retained</strong> after the analysis is complete. We use encrypted connections (HTTPS) for all data transmission.</p>
 
-        <h2>Third-Party Services</h2>
+        <h2>Third-Party AI Service</h2>
+        <p>Your data is processed by a third-party AI provider:</p>
         <ul>
-            <li><strong>Supabase</strong> — Serverless backend for AI processing. <a href="https://supabase.com/privacy">Privacy Policy</a></li>
-            <li><strong>SiliconFlow</strong> — AI vision model provider. Photos are processed and discarded.</li>
+            <li><strong>Provider:</strong> SiliconFlow</li>
+            <li><strong>What is sent:</strong> Outfit photos (as images) are sent for AI scoring and style analysis. Chat messages (text only) are sent for AI coach responses. No personal identifiers (name, email, device ID, location, etc.) are ever included.</li>
+            <li><strong>Models used:</strong> Qwen2.5-VL-7B-Instruct (image analysis and style tips) and Qwen3-8B (coach chat).</li>
+            <li><strong>Data retention:</strong> SiliconFlow processes requests in real-time and does not retain user-submitted data beyond the API request lifecycle. Photos and messages are not stored.</li>
+            <li><strong>Transmission:</strong> All data is sent securely via HTTPS through our Supabase backend. No data is sent directly from your device to SiliconFlow.</li>
+        </ul>
+        <p>Before your first scan or coach interaction, the app explicitly asks for your permission to send data to the AI service. You may decline, and no data will be sent.</p>
+
+        <h2>Other Third-Party Services</h2>
+        <ul>
+            <li><strong>Supabase</strong> — Serverless backend that routes requests to the AI provider. <a href="https://supabase.com/privacy">Privacy Policy</a></li>
             <li><strong>Superwall</strong> — Subscription and paywall management. <a href="https://superwall.com/privacy">Privacy Policy</a></li>
             <li><strong>Apple StoreKit</strong> — In-app purchases and subscriptions.</li>
         </ul>
